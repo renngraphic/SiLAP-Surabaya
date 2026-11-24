@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cek Status Laporan — SiLAP Surabaya</title>
+  <meta name="description" content="Cek status dan bukti tindak lanjut laporan pelanggaran lalu lintas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="status">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-top">
+        <a class="brand" href="index.html"><span class="brand-mark"><img class="brand-logo" src="assets/surabaya-logo.png" alt="Logo Surabaya"></span><span class="brand-text">SiLAP Surabaya<span>Sistem Laporan Aparat</span></span></a>
+        <a class="header-officer" href="petugas.html">Portal Petugas →</a>
+      </div>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="lapor.html">Buat Laporan</a>
+        <a class="active" href="status.html">Cek Status</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="narrow" id="main">
+    <div class="page-head">
+      <span class="eyebrow">Lacak laporan</span>
+      <h1>Cek status laporan Anda</h1>
+      <p class="muted">Masukkan kode laporan yang muncul setelah Anda mengirim laporan.</p>
+    </div>
+
+    <form id="status-form" class="card form-panel" novalidate>
+      <div class="field" style="margin-bottom:12px">
+        <label for="kode">Kode laporan</label>
+        <input class="input" id="kode" type="text" placeholder="SILAP-2026-000417" autocomplete="off" spellcheck="false">
+        <span class="error" data-error-for="kode"></span>
+      </div>
+      <button class="btn btn-primary" type="submit">Cek Status</button>
+      <p class="small muted" style="margin-top:16px;margin-bottom:0">Coba kode laporan contoh berikut:</p>
+      <div class="demo-chips" id="demo-chips"></div>
+    </form>
+
+    <div id="status-empty" class="section-sm" role="status" aria-live="polite"></div>
+
+    <section id="status-result" class="hide" style="margin-top:22px" aria-live="polite">
+      <div class="card pad">
+        <div class="row" style="justify-content:space-between;align-items:flex-start">
+          <div>
+            <span class="small muted">Kode laporan</span>
+            <h2 class="code-value" id="status-kode" style="margin:2px 0 8px">—</h2>
+          </div>
+          <div id="status-badge"></div>
+        </div>
+        <hr class="divider">
+        <div class="kv">
+          <div class="kv-item"><span>Kategori</span><strong id="status-kategori">—</strong></div>
+          <div class="kv-item"><span>Waktu kejadian</span><strong id="status-waktu">—</strong></div>
+          <div class="kv-item"><span>Lokasi</span><strong id="status-lokasi">—</strong></div>
+          <div class="kv-item"><span>Plat kendaraan</span><strong id="status-plat">—</strong></div>
+        </div>
+        <p class="small muted" style="margin-top:16px;margin-bottom:4px">Deskripsi pelapor</p>
+        <p id="status-deskripsi">—</p>
+      </div>
+
+      <div class="card pad" style="margin-top:16px">
+        <h2>Perjalanan laporan</h2>
+        <p class="muted small">Setiap tahapan penanganan dicatat oleh petugas.</p>
+        <div id="status-timeline" style="margin-top:18px"></div>
+      </div>
+
+      <div class="card pad hide" id="status-proof" style="margin-top:16px"></div>
+
+      <div class="notice notice-info" style="margin-top:16px"><span data-icon="info"></span><span>Prototipe UI — data dan tindak lanjut di halaman ini adalah simulasi untuk keperluan presentasi.</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">SiLAP Surabaya · prototipe UI · seluruh data bersifat simulasi.</div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

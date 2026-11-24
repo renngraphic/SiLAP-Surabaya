@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SiLAP Surabaya — Lapor Pelanggaran Lalu Lintas</title>
+  <meta name="description" content="Prototipe UI sistem pelaporan pelanggaran lalu lintas warga Surabaya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-top">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><img class="brand-logo" src="assets/surabaya-logo.png" alt="Logo Surabaya"></span>
+          <span class="brand-text">SiLAP Surabaya<span>Sistem Laporan Aparat</span></span>
+        </a>
+        <a class="header-officer" href="petugas.html">Portal Petugas →</a>
+      </div>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a class="active" href="index.html">Beranda</a>
+        <a href="lapor.html">Buat Laporan</a>
+        <a href="status.html">Cek Status</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Warga melapor · Pemerintah menindak</span>
+        <h1>Lihat pelanggaran lalu lintas? Lapor, lalu pantau tindak lanjutnya.</h1>
+        <p class="lead">SiLAP Surabaya memudahkan warga mengirim bukti pelanggaran lalu lintas. Laporan Anda diverifikasi Dinas Perhubungan dan diteruskan ke Polrestabes Surabaya untuk ditindaklanjuti.</p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="lapor.html">Buat Laporan</a>
+          <a class="btn btn-outline" href="status.html">Cek Status Laporan</a>
+        </div>
+        <div class="hero-badges">
+          <span class="hero-badge"><span data-icon="clock"></span>3 menit selesai</span>
+          <span class="hero-badge"><span data-icon="lock"></span>Bisa anonim</span>
+          <span class="hero-badge"><span data-icon="location"></span>Khusus Surabaya</span>
+        </div>
+
+        <div class="card hero-card">
+          <div class="hero-card-head">
+            <div>
+              <span class="small muted">Contoh laporan warga</span>
+              <h2 class="row heading-sm" style="margin:4px 0 0;gap:8px"><span data-icon="parking"></span>Parkir liar — Darmo</h2>
+            </div>
+            <span class="badge badge-ditindaklanjuti">Ditindaklanjuti</span>
+          </div>
+          <p class="small muted" style="margin-top:10px">SILAP-2026-000412 · Diverifikasi Dishub, ditindaklanjuti Polrestabes Surabaya</p>
+          <a class="btn btn-outline btn-sm" href="status.html?kode=SILAP-2026-000412">Lihat bukti tindak lanjut</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="center" style="margin-bottom:26px">
+          <span class="eyebrow">Cara kerja</span>
+          <h2>Tiga langkah, tanpa perlu datang ke kantor</h2>
+          <p class="lead" style="margin-inline:auto">Dari bukti yang Anda ambil sampai tindakan aparat, semuanya bisa dipantau.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card pad">
+            <div class="step-num">1</div>
+            <h3>Rekam bukti</h3>
+            <p class="muted small">Ambil foto pelanggaran, pilih kecamatan dan patokan lokasi di Surabaya.</p>
+          </div>
+          <div class="card pad">
+            <div class="step-num">2</div>
+            <h3>Kirim laporan</h3>
+            <p class="muted small">Pilih kategori pelanggaran, isi plat kendaraan, lalu terima kode laporan.</p>
+          </div>
+          <div class="card pad">
+            <div class="step-num">3</div>
+            <h3>Pantau hasilnya</h3>
+            <p class="muted small">Masukkan kode laporan untuk melihat status dan bukti tindak lanjut pemerintah.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" style="background:#eaf1f8">
+      <div class="wrap">
+        <div class="row" style="justify-content:space-between">
+          <div>
+            <span class="eyebrow">Jenis pelanggaran</span>
+            <h2 style="margin-bottom:6px">Yang bisa dilaporkan</h2>
+          </div>
+          <a class="btn btn-primary btn-sm" href="lapor.html">Lapor sekarang</a>
+        </div>
+        <div class="grid grid-3" style="margin-top:18px">
+          <div class="card cat-card"><span class="cat-icon" data-icon="trafficLight"></span><div><strong>Melanggar lampu merah</strong><div class="small muted">Termasuk lampu merah yang diabaikan sepeda motor.</div></div></div>
+          <div class="card cat-card"><span class="cat-icon" data-icon="helmet"></span><div><strong>Tidak pakai helm</strong><div class="small muted">Pengendara motor tanpa helm sesuai aturan.</div></div></div>
+          <div class="card cat-card"><span class="cat-icon" data-icon="parking"></span><div><strong>Parkir liar</strong><div class="small muted">Parkir di badan jalan atau trotoar.</div></div></div>
+          <div class="card cat-card"><span class="cat-icon" data-icon="arrows"></span><div><strong>Lawan arah</strong><div class="small muted">Melaju berlawanan dengan arus lalu lintas.</div></div></div>
+          <div class="card cat-card"><span class="cat-icon" data-icon="phone"></span><div><strong>HP saat menyetir</strong><div class="small muted">Menggunakan ponsel saat mengendarai kendaraan.</div></div></div>
+          <div class="card cat-card"><span class="cat-icon" data-icon="speed"></span><div><strong>Kecepatan berlebih</strong><div class="small muted">Melaju di atas batas kecepatan yang ditentukan.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap grid grid-2">
+        <div class="card pad">
+          <span class="eyebrow">Untuk warga</span>
+          <h2>Identitas Anda tidak diwajibkan</h2>
+          <p class="muted">Anda cukup menyimpan kode laporan yang muncul setelah pengiriman. Kode itulah yang dipakai untuk mengecek status. Kontak pelapor hanya opsional.</p>
+          <a class="btn btn-outline" href="lapor.html">Mulai laporan</a>
+        </div>
+        <div class="card pad">
+          <span class="eyebrow">Untuk pemerintah</span>
+          <h2>Penanganan tercatat, bukan sekadar janji</h2>
+          <p class="muted">Setiap perubahan status menyimpan riwayat beserta keterangan petugas. Warga dapat melihat bukti tindak lanjut dari laman status publik.</p>
+          <a class="btn btn-outline" href="petugas.html">Buka dashboard petugas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <strong>SiLAP Surabaya</strong> — prototipe antarmuka untuk tugas Design Thinking.<br>
+      Seluruh data bersifat simulasi; tidak ada laporan yang dikirim ke instansi mana pun.
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

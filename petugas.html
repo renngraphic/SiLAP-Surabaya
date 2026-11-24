@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Petugas — SiLAP Surabaya</title>
+  <meta name="description" content="Dashboard verifikasi dan penanganan laporan pelanggaran lalu lintas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="petugas">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-top">
+        <a class="brand" href="index.html"><span class="brand-mark"><img class="brand-logo" src="assets/surabaya-logo.png" alt="Logo Surabaya"></span><span class="brand-text">SiLAP Surabaya<span>Portal Petugas</span></span></a>
+        <a class="header-officer" href="index.html">← Lihat situs publik</a>
+      </div>
+      <nav class="header-nav" aria-label="Navigasi petugas">
+        <a class="active" href="petugas.html">Antrean laporan</a>
+        <a href="status.html">Laman status publik</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <div class="page-head">
+      <span class="eyebrow">Dinas Perhubungan · Polrestabes Surabaya</span>
+      <h1>Dashboard penanganan laporan</h1>
+      <p class="muted">Verifikasi laporan warga, teruskan ke petugas berwenang, dan catat bukti tindak lanjut.</p>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="dash-layout" style="margin-top:20px">
+      <div>
+        <div class="row" style="justify-content:space-between;margin-bottom:10px">
+          <h2 style="margin:0;font-size:19px">Antrean laporan</h2>
+          <span class="small muted">Klik laporan untuk membuka detail</span>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" type="button" data-filter="Semua">Semua</button>
+          <button class="filter" type="button" data-filter="Diterima">Diterima</button>
+          <button class="filter" type="button" data-filter="Diverifikasi">Diverifikasi</button>
+          <button class="filter" type="button" data-filter="Ditindaklanjuti">Ditindaklanjuti</button>
+          <button class="filter" type="button" data-filter="Selesai">Selesai</button>
+          <button class="filter" type="button" data-filter="Ditolak">Ditolak</button>
+        </div>
+        <div class="card" id="report-list" style="margin-top:12px"></div>
+      </div>
+      <div class="card detail-panel" id="detail-content"></div>
+    </div>
+
+    <div class="notice notice-warn" style="margin-top:20px"><span data-icon="warning"></span><span>Prototipe UI: perubahan status hanya tersimpan selama tab browser ini terbuka dan tidak dikirim ke instansi mana pun.</span></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">SiLAP Surabaya · prototipe UI · seluruh data bersifat simulasi.</div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
