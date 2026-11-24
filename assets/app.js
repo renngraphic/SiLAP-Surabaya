@@ -20,7 +20,7 @@
     helmet: '<path d="M4 14a8 8 0 0 1 16 0v2H4v-2Z"/><path d="M3 18h18v2H3z"/>',
     parking: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10 17V7h3.5a3 3 0 0 1 0 6H10"/>',
     arrows: '<path d="M7 7h12m-3-3 3 3-3 3M17 17H5m3-3-3 3 3 3"/>',
-    phone: '<rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/>',
+    uTurn: '<path d="M6 20V11a5 5 0 0 1 10 0v3"/><path d="m13 11 3 3 3-3"/>',
     speed: '<path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 14 4-4"/><circle cx="12" cy="14" r="1"/>',
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/>',
     question: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-.9.7-1.5 1.2-1.5 2.5"/><path d="M12 17h.01"/>',
@@ -48,7 +48,7 @@
     { id: "helm", label: "Tidak menggunakan helm", icon: "helmet" },
     { id: "parkir-liar", label: "Parkir liar", icon: "parking" },
     { id: "lawan-arah", label: "Melaju di lawan arah", icon: "arrows" },
-    { id: "hp-menyetir", label: "Menggunakan HP saat menyetir", icon: "phone" },
+    { id: "putar-balik", label: "Putar balik ilegal", icon: "uTurn" },
     { id: "kecepatan", label: "Kecepatan berlebih", icon: "speed" }
   ];
 
